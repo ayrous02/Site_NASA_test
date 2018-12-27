@@ -1,0 +1,138 @@
+@font-face{
+	font-family: 'spaceage';
+	src: url('fonts/spaceage.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+@font-face{
+	font-family: 'surfingcapital';
+	src: url('fonts/surfingcapital.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+#area1{
+	background-image: url('img/fundoArea1.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-family: "spaceage";
+	margin: 0px;
+}
+
+#area1 h1{;
+	font-size: 7em;
+	text-align: center;
+	color: blue;
+}
+
+#logos img{
+
+    display: block;
+    width: 12%;
+    height: 20%;
+    /* left: 15%; */
+    margin-top: 9%;
+    margin-left: 3%;.
+}
+
+#logos img:hover {
+	filter: brightness(120%);
+}
+
+.transformed {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg) ;
+    transform: rotate(360deg);
+}
+
+#area2{
+	background-image: url('img/marte.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-family:"surfingcapital" ;
+	margin: 0px;
+}
+#area2 h1{;
+	font-size: 6em;
+	text-align: center;
+	margin-left: 1.5em;
+	color: white;
+}
+
+#desfoque img{
+
+    filter: blur(0.11em);
+    width: 35em;
+    position: relative;
+    margin-top: 1em;
+    margin-left: 28em;
+}
+
+.slide{
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+button{
+
+    background-color: transparent;
+    font-family: "surfingcapital";
+    border-color: darkred;
+    font-size: 2em;
+    margin-left: 20.5em;
+    margin-top: 1em;
+    font-weight: 600;
+    border-width: 0.2em;
+}
+
+.button{
+	background-color: transparent;
+	color: black
+	/*colocar borda darkred*/
+}
+
+
+#area3{
+	
+	background-image: url('img/fundoBlur.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-family:"surfingcapital" ;
+	margin: 0px;
+}
+
+#area4{
+	
+	background-image: url('img/auroraboreal.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin-top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-family:"surfingcapital" ;
+	margin: 0px;
+}
+
+#imagensLado img:hover{
+	filter: brightness(120%);
+}

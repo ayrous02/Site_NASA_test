@@ -1,0 +1,43 @@
+
+.bg-purple-light{
+    background-color: #a219c5;
+}
+
+.bg-purple-dark{
+    background-color: #5f276e;
+}
+
+img{
+    width: 150px;
+    opacity: .5;
+}
+
+#cardi{
+	margin-top:45px;
+	margin-left:17%;
+	width:70%;
+	height:70%;
+	text-align: center;
+}
+.jumbotron h2{
+	margin-top:0%;
+	top:0;
+}
+
+
+#tabelinha{
+	margin-left:10%;
+	margin-right:5%;
+}
+
+#tabelinha h2{
+	margin-bottom:3%;
+	margin-right:14%;
+	margin-left:3%;
+}
+
+.form-group{
+	text-align:left;
+	margin-left:10%;
+	margin-right:15%;
+}

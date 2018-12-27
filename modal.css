@@ -1,0 +1,81 @@
+/*
+@font-face{
+    font-family: 'surfingcapital';
+    src: url('fonts/surfingcapital.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*/
+
+@font-face{
+    font-family: 'gameofbrush';
+    src: url('fonts/gameofbrush.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+#botao, .modal{
+    font-family: "gameofbrush";    
+}
+
+
+.modal-dialog {
+    max-width: 500px;
+    margin: auto;
+}
+
+.modal-backdrop.fade {
+    opacity: 0.7;
+}
+
+#modal-mensagem{
+	margin-top:40px;
+}
+
+
+.modal-header .close{    
+    margin-top: -0.2em;
+}
+
+
+.modal-header{
+	margin-top:90px;	
+}
+
+.modal-header img{
+width:50px;
+height:20px;
+bottom:0;	
+}
+
+.modal-body{
+	margin-top:0px;
+    padding: 1.5em;
+}
+
+.modal-header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1em;
+    border-bottom: 1px solid black;
+}
+    .modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: black;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    top: 90px;
+}

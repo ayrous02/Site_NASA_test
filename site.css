@@ -1,0 +1,716 @@
+@charset "UTF-8";
+
+*, html, body {
+	margin:0;
+	padding:0;
+display: grid;
+}
+
+
+body {margin-left:0;background-size:100% 28em!important; padding-top: 50px;
+          position: relative;}
+
+
+@font-face{
+	font-family: 'spaceage';
+	src: url('fonts/spaceage.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face{
+	font-family: 'drybrush.ttf';
+	src:url('fonts/drybrush.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face{
+	font-family: 'surfingcapital';
+	src: url('fonts/surfingcapital.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+@font-face{
+	font-family: 'gameofbrush';
+	src: url('fonts/gameofbrush.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+#logoNasa:hover{
+	filter: brightness(130%);	
+}
+
+
+      @media screen and (max-width: 100%) {
+          .side-collapse-container{
+              width:100%;
+              position:relative;
+              left:0;
+              transition:left .4s;
+          }
+          .side-collapse-container.out{
+              left:200px;
+          }
+          .side-collapse {
+              top:50px;
+              bottom:0;
+              left:0;
+              width:200px;
+              position:fixed;
+              overflow:hidden;
+              transition:width .4s;
+          }
+          .side-collapse.in {
+              width:0;
+          }
+      }
+
+.nav-side-menu{
+      overflow: hidden;
+    font-family: "gameofbrush";
+    font-size: 1.2em;
+    font-weight: 200;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    width: 17em;
+    height: 100%;
+    color: #e1ffff;
+    bottom: 0.4em;
+}
+.nav-side-menu .brand {
+      background-color: black;
+    line-height: 5em;
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 3em;
+}
+.nav-side-menu .toggle-btn {
+  display: none;
+}
+.nav-side-menu ul,
+.nav-side-menu li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 35px;
+  cursor: pointer;
+  /*    
+    .collapsed{
+       .arrow:before{
+                 font-family: FontAwesome;
+                 content: "\f053";
+                 display: inline-block;
+                 padding-left:10px;
+                 padding-right: 10px;
+                 vertical-align: middle;
+                 float:right;
+            }
+     }
+*/
+}
+.nav-side-menu ul :not(collapsed) .arrow:before,
+.nav-side-menu li :not(collapsed) .arrow:before {
+  font-family: FontAwesome;
+  content: "\f078";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+  float: right;
+}
+.nav-side-menu ul .active,
+.nav-side-menu li .active {
+  border-left: 3px solid #d19b3d;
+  background-color: #4f5b69;
+}
+.nav-side-menu ul .sub-menu li.active,
+.nav-side-menu li .sub-menu li.active {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li.active a,
+.nav-side-menu li .sub-menu li.active a {
+  color: #d19b3d;
+}
+.nav-side-menu ul .sub-menu li,
+.nav-side-menu li .sub-menu li {
+  background-color: #181c20;
+  border: none;
+  line-height: 28px;
+  border-bottom: 1px solid #23282e;
+  margin-left: 0px;
+}
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover {
+  background-color: #020203;
+}
+.nav-side-menu ul .sub-menu li:before,
+.nav-side-menu li .sub-menu li:before {
+  font-family: FontAwesome;
+  content: "\f105";
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+.nav-side-menu li {
+
+    padding-left: 0px;
+    border-left: 0.3em solid darkblue;
+    border-bottom: 0.1em solid #23282e;
+    margin-bottom: 1em;
+  }
+
+.nav-side-menu li a {
+  text-decoration: none;
+  color: #e1ffff;
+}
+.nav-side-menu li a i {
+  padding-left: 10px;
+  width: 20px;
+  padding-right: 20px;
+}
+.nav-side-menu li:hover {
+  border-left: 3px solid darkred;
+  background-color: #4f5b69;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+@media (max-width: 100%) {
+  .nav-side-menu {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+    z-index: 100000000000000;
+  }
+  .nav-side-menu .toggle-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10 !important;
+    padding: 3px;
+    background-color: #ffffff;
+    color: #000;
+    width: 40px;
+    text-align: center;
+  }
+  .brand {
+    text-align: left !important;
+    font-size: 22px;
+    padding-left: 20px;
+    line-height: 50px !important;
+  }
+}
+@media (min-width: 320px) {
+  .nav-side-menu .menu-list .menu-content {
+    display: block;
+  }
+}
+
+
+@media (min-width: 320px)
+_forms.scss:334
+.form-inline .form-control {
+    display: inline-block;
+    width: 400px;
+    vertical-align: middle;
+  }
+
+.navbar button {
+    height: 40px;
+    width: 80px;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.brand img{
+    width: 7.5em;
+}
+
+#menu-content button, img{
+	width:5em;
+	position: relative;
+    display: flex;
+    left: 20%;
+}
+
+
+#menu-content footer{
+	margin-left: 20%;
+}
+
+header{
+		font-family:"gameofbrush";	
+}
+
+
+main{
+  /**
+	background-image:url('img/fundoGradiente.png');
+	background-repeat:no-repeat;
+	**/
+  background-image: linear-gradient(to right, rgba(244, 144, 73,0.6),rgba(226, 106, 20,0.6));
+  background-size: 100%;
+	margin-top: 0;
+	margin-left: 20em;
+	right: 0;
+	bottom: 0;
+	font-family:"gameofbrush";
+}
+
+#apresentacao{
+  margin-top: 6.3em;
+  margin-left: 13%;
+}
+
+
+#apresentacao h1{
+
+    text-align: center;
+    color: black;
+    z-index: 9999;
+}
+
+
+#apresentacao img{
+  max-width: 26em;
+    z-index: 1;
+    position: flex;
+    width: 26em;
+    height: 22em;
+    left: 49em;
+    right: 0;
+    top: 4em;
+  }
+
+
+#aqui img:hover{  
+  filter: brightness(40%); 
+}
+
+
+
+#foguete a:active{
+    /*margin-top: 0em;*/
+    margin-left: -4em;
+}
+
+
+
+#caixaTextoRisco img{
+max-width: 101em;
+    width: 101em;
+    left: 11em;
+    top: -5em;
+    height: 35em;
+}
+
+.rodar{
+-webkit-transform:rotate(10deg);
+-o-transform: rotate(45deg);
+  
+}
+
+
+ #videoFundo video {
+    height: 18em;
+    display: flex;
+    vertical-align: baseline;
+    position: relative;
+    left: 41em;
+    bottom: 8em;
+  }
+
+#habitacao{
+    margin-left: 13%;
+    color: white;
+    width: 10em;
+    left: 20em;
+    right: 30em;
+    margin-top: 10.3em;
+}
+
+
+#imagemFundo1 img{
+  max-width: 100em;
+    left: 8.8em;
+    width: 100em;
+    height: 50em;
+    opacity: 1.7;
+    top: -1.4em;
+    z-index: 1;
+}
+
+
+#caixaRisco img{
+  max-width: 88.7em;
+    z-index: 100;
+    top: -43.9em;
+    width: 88.7em;
+    height: 36.5em;
+    left: 13.1em;
+    opacity: .9;
+}
+
+
+#caixaRisco p{  
+    z-index: 10000;
+    color: navajowhite;
+    margin-top: -15em;
+    font-size: 4.6em;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 1.3em;
+    margin-right: 10em;
+    font-family: "drybrush.ttf";
+    width: 20em;
+    }
+
+.caixatexto{
+    z-index: 9999;
+    margin-left: 3.1em;
+    text-align: center;
+    font-size: 250%;
+    border-radius: 14.5%;
+    margin-top: -4.5em;
+  }
+
+.caixaRedonda{
+    position: relative;
+    z-index: 100000;
+    width: 7em;
+    height: 6em;
+    border-radius: 5em;
+    margin-top: -5em;
+    margin-left: 7em;
+  }
+
+
+.caixaRedonda2{
+
+    position: relative;
+    z-index: 100000;
+    width: 7.5em;
+    height: 6.4em;
+    border-radius: 6em;
+    margin-top: -5em;
+    margin-left: 7em;
+  }
+
+
+#transporte{
+
+    margin-top: -39em;
+    color: white;
+    width: 10em;
+    left: 20em;
+    right: 30em;
+    margin-left: 13%;
+}
+
+#imagemFundo2 img{
+max-width: 100em;
+    filter: blur(2px);
+    left: 8.8em;
+    width: 100em;
+    height: 69em;
+    opacity: 1.7;
+    top: -2em;
+    z-index: 1;
+    margin-right: 3.9em;
+  }
+
+#imagemLado1 img{
+  max-width: 27em;
+    left: 15em;
+    top: -69em;
+    z-index: 10000;
+    width: 27em;
+}
+
+
+#imagemLado2 img{
+    left: 78.3em;
+    top: -86em;
+    z-index: 10000;
+    width: 27em;
+  }
+
+#caixaNuvem img{
+max-width: 83.5em;
+    left: 17em;
+    z-index: 10000000;
+    top: -69.2em;
+    width: 83.5em;
+    height: 40em;
+  }
+
+#caixaNuvem p{
+    z-index: 10004000;
+    color: navajowhite;
+    margin-top: -15.5em;
+    margin-left: 2.5em;
+    font-family: "drybrush.ttf";
+    font-size: 6.3em;
+    font-weight: 600;
+    width: 12em;
+    text-align: center;
+}
+
+.caixaRedonda3{
+   
+    position: relative;
+    z-index: 100000;
+    width: 7em;
+    height: 6.3em;
+    border-radius: 6em;
+    margin-top: -5em;
+    margin-left: 7em;
+  }
+
+
+  #alimento {
+    color: white;
+    width: 10em;
+    left: 20em;
+    right: 30em; 
+    margin-left: 13%;
+}
+
+#imagemFundo3 img{
+  max-width: 100em;
+    left: 9em;
+    width: 100em;
+    height: 86.5em;
+    opacity: 1.7;
+    top: -2.7em;
+    z-index: 1;
+    margin-right: 3.9em;
+  
+}
+
+.caixatexto2{
+  
+    background: rgba(30, 30, 30, 0.8);
+    border: 2px solid #1a1a1a;
+    height: 10.7em;
+    width: 15.2em;
+    position: relative;
+    top: -38.7em;
+    left: 11em;
+    z-index: 10000;
+  }
+
+.caixatexto2 img{
+max-width: 11.2em;
+    width: 11.2em;
+    height: 7.6em;
+    left: 2em;
+    margin-top: -0.4em;
+}
+
+.caixatexto3{
+    background: rgba(30, 30, 30, 0.8);
+    border: 2px solid #1a1a1a;
+    height: 10.7em;
+    width: 15.2em;
+    position: relative;
+    top: -49.4em;
+    left: 26.2em;
+    z-index: 10000;
+  }
+
+.caixatexto3 img{
+max-width: 12.9em;
+    width: 12.9em;
+    height: 8.8em;
+    left: 0.6em;
+    top: -0.3em;
+  }
+
+
+.caixatexto4{
+    background: rgba(30, 30, 30, 0.8);
+    border: 2px solid #1a1a1a;
+    height: 10.7em;
+    width: 15.2em;
+    position: relative;
+    top: -60.1em;
+    left: 41.4em;
+    z-index: 10000;
+  }
+
+.caixatexto4 img{
+max-width: 11.9em;
+    width: 11.9em;
+    height: 8.8em;
+    left: 1.6em;
+    top: -1.4em;
+  }
+
+
+
+.caixatexto5{
+  
+    background: rgba(30, 30, 30, 0.8);
+    border: 2px solid #1a1a1a;
+    height: 10.7em;
+    width: 15.2em;
+    position: relative;
+    top: -70.8em;
+    left: 56.5em;
+    z-index: 10000;
+  }
+
+.caixatexto5 img{
+  max-width: 12.8em;
+      width: 12.8em;
+    height: 9.5em;
+    left: 1.6em;
+    top: -1.5em;
+  }
+
+#comidas{
+      margin-left: 16.8em;
+    margin-top: -41.1em;
+  
+}
+
+.card-body {
+    width: 18.5em;
+    text-align: center;
+
+  }
+
+.card{
+  left:224px;  
+}
+
+  .col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    top: -708px;
+    font-family: "drybrush.ttf";
+    z-index: 1000000;
+}
+
+.caixatextinho{
+
+    width: 30em;
+    height: 29em;
+    top: -36em;
+    left: 10em;
+    background: rgba(30, 30, 30, 0.8);
+    border: 2px solid #1a1a1a;
+    position: relative;
+    z-index: 10000;
+}
+
+
+
+.shrink:hover{
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+}
+
+.caixatextinho:hover{
+
+    border-radius: 28%;
+    background-color: transparent;
+}
+
+
+#localizacao{
+    margin-left: 13%;
+}
+/*
+  #map {
+        height: 400px;
+        width: 100%;
+       }
+*/
+
+.caixatextinho h3{
+    font-family: "drybrush.ttf";
+    color: darkblue;
+    font-size: 3em;
+    margin-top: 1em;
+    font-weight: 600;
+    z-index: 12;
+    margin-left: 1.5em;
+    width: 16em;
+    height: 1em;
+}
+
+
+.caixatextinho p{   
+    font-family: "drybrush.ttf";
+    color: darkblue;
+    font-size: 1.9em;
+    margin-top: -2.8em;
+    font-weight: 600;
+    z-index: 12;
+    margin-left: 0em;
+    opacity: .8;
+    width: 15em;
+    height: 1em;
+    text-align: center;
+}
+
+
+  footer{
+    max-width: 100%;
+    background-color: black;
+    margin-left: 200px;
+
+  }
+
+  #footer1 img{
+    max-width: 15.3em;
+    left: 0.5em;
+    width: 15.3em;
+    margin-top: 0.9rem;
+  }
+
+  #footer4 img{
+    max-width: 11.3em;
+    left: 90%;
+    top: -5.7em;
+    width: 11.3em;
+  }
+
+  #direitos p{
+    color: white;
+    font-family: "gameofbrush";
+    margin-top: -2.2em;
+    margin-left: 17.6em;
+    font-size: 2em;
+    text-align: left;
+    margin-right: 2.3em;
+  }
+
+#contato p{
+    margin-top: -2em;
+    color: white;
+    margin-left: 6em;
+    font-size: 3em;
+}

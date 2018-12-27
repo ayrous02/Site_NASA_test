@@ -1,0 +1,267 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Bem Vindo!</title>
+	<style>
+
+	body{
+		overflow: hidden;;
+		margin: 0px;
+		padding:0px;
+	}
+
+
+	.slide{
+		height: 100%;
+		width: 100%;
+	}
+
+	</style>
+
+	<script>
+	class Slide{
+		constructor(){
+			this.slideAtual = null;
+			this.slides = [];
+			this.indiceAtual = 0;
+
+			this.carregar();
+			this.aplicarEventosScroll();
+		}
+
+		carregar(){
+
+			let $this = this;			
+
+			window.addEventListener('load', function(){
+				let slides = document.querySelectorAll(".slide");
+
+				for(var i = 0; i < slides.length; i++){
+					$this.slides[i] = slides[i];
+				}
+
+				//Guarda o primeiro slide como atual
+				$this.slideAtual = $this.slides[0];
+			});
+		}
+
+		aplicarEventosScroll(){
+			let $this = this;
+			window.addEventListener('wheel', function(e){
+				//Rolando pra cima
+				if(e.wheelDeltaY >= 0){
+					$this.voltarSlide();
+				}
+				//Rolando pra baixo
+				else{
+					$this.avancarSlide();
+				}
+			});
+		}
+
+
+
+		avancarSlide(){
+			this.indiceAtual++;
+
+			//Se estiver no primeiro, ele volta para o ultimo
+			if(this.indiceAtual >= this.slides.length){
+				this.indiceAtual = 0;
+			}
+
+			this.slideAtual = this.slides[this.indiceAtual];
+
+			window.scrollTo(0,this.slideAtual.getClientRects()[0].bottom);
+			console.log(this.slideAtual.getClientRects()[0]);
+
+
+
+		}
+
+		voltarSlide(){
+			this.indiceAtual--;
+
+			//Se estiver no primeiro, ele volta para o ultimo
+			if(this.indiceAtual <= 0){
+				this.indiceAtual = this.slides.length-1;
+			}
+
+			this.slideAtual = this.slides[this.indiceAtual];
+
+			window.scrollTo(1,this.slideAtual.getClientRects()[0].bottom);
+			console.log(this.slideAtual.getClientRects()[0]);
+
+
+
+		}
+	}
+	
+	var slide = new Slide();
+
+	</script>
+	<link rel="stylesheet" type="text/css" href="banner.css">
+</head>
+<body>
+
+
+<div class="slide" id="area1" style="
+    height: 100%;
+    width: 100%;">
+	<h1>Bem - Vindo</h1>
+
+
+<div id="logos">
+	<!-- logo do projeto com link-->
+	<a href="https://breakthroughinitiatives.org/" >
+		<img src="img/projeto.png" alt="imagem do projeto breakthought listen"/>
+	</a>
+
+<!-- logo da nasa com link -->
+<a href="https://www.nasa.gov/" >
+	<img  src="img/logo.png" alt="logo da nasa"/>
+	</a>
+</div>
+
+<!-- fazer a imagem rotacionar e colocar ela no centro 
+<div id="imagemRodar" class="transformed">
+<img style="width: 70px;" src="img/buracoNegro.png" alt="imagem de um buraco negro"/>
+</div>
+-->
+</div>
+
+
+<div class="slide" id="area2" style="height: 100%; width: 100%;">
+	<h1>Projeto Marte</h1>
+
+	<div id="desfoque">
+	<img src="img/marte.jpg" alt="imagem desfocada da superficie de marte"/>
+	</div>
+
+	<!-- colocar as imagens de lado -->
+<div type="text" class="caixaCadastro" name="item_descr_1" maxlength="50" ></div>
+  <div type="text" class="caixaRedonda" name="item_descr_1" maxlength="50" style=" background: black; opacity: .8; border: 2px solid #1a1a1a; 
+    width: 11em;
+    height: 8em;
+    margin-left: 4em;
+    margin-top: -24em;">
+	</div>
+
+	<div id="imagensLado">
+		<img src="img/casinha.png" alt="imagem de uma casinha" style="
+	    width: 9em;
+	    height: auto;
+	    margin-left: 5em;
+	    margin-top: -9em;"/>
+	</div>
+
+<div type="text" class="caixaCadastro" name="item_descr_1" maxlength="50" ></div>
+  <div type="text" class="caixaRedonda" name="item_descr_1" maxlength="50" style=" 
+    background: black;
+    opacity: .8;
+    border: 2px solid #1a1a1a;
+    width: 11em;
+    height: 8em;
+    margin-left: 4em;
+    margin-top: 2em;">
+	</div>
+
+	<div id="imagensLado">
+		<img src="img/hamburguer.png" alt="imagem de um hamburguer" style="
+	    margin-left: 4em;
+	    margin-top: -10em;
+	    z-index: auto;
+	    width: 11em;"/>
+	</div>
+
+  <div type="text" class="caixaCadastro" name="item_descr_1" maxlength="50" ></div>
+  <div type="text" class="caixaRedonda" name="item_descr_1" maxlength="50" style=" 
+    background: black;
+    opacity: .8;
+    border: 2px solid #1a1a1a;
+    width: 11em;
+    height: 8em;
+    margin-left: 4em;
+    margin-top: 1em;">
+	</div>
+
+	<div id="imagensLado">
+		<img src="img/foguete2.png" alt="imagem de um foguete" style="
+	    margin-top: -7em;
+	    margin-left: 4em;"/>
+	</div>
+
+	<a href="site.html">
+	<div id="botao">
+	<button type="button" class="botao">Leia Mais</button>
+	</div>
+	</a>
+</div>
+
+<div class="slide" id="area3" style="
+    height: 100%;
+    width: 100%;">
+	<h1>Área 3</h1>
+	<!-- colocar a area de contato -->
+	<a href="cadastro.html">
+	<img src="img/se-inscreva.png" alt="imagem que redireciona para o cadastro" style="
+    width: 11em;
+    margin-left: 30em;
+    margin-bottom: 338px;"/>
+	</a>
+
+	<a href="https://www.facebook.com/NASA/">
+	<img src="img/facebook.png" alt="imagem que redireciona para pagina no face" style="
+    width: 12em;
+    margin-top: 21.8em;
+    margin-left: -36em;"/>
+	</a>
+
+
+	<img src="img/telefone.png" alt="imagem que mostrará o telefone de contato" style="
+    width: 15em;
+    margin-left: 13em;
+    margin-bottom: 2em;"/>
+
+	<s href="https://www.instagram.com/nasa/">
+	<img src="img/instagram.png" alt="imagem que redireciona para pagina do insta" style="
+    width: 6em;
+    margin-bottom: -107px;
+    margin-left: -552px;"/>
+	</a>
+
+	<a href="https://twitter.com/nasa">
+	<img src="img/twitter.png" alt="imagem que redireciona para o twitter" style="
+    width: 10em;
+    margin-bottom: -13em;
+    margin-left: 2em;"/>
+	</a>
+</div>
+
+<div class="slide" id="area4" style="
+    height: 100%;
+    width: 100%;">
+	<h1>Área 4</h1>
+
+	<!-- colocar as newsletters-->
+	<img src="img/news1.png" alt="primeira noticia" style="width: 16px;
+    margin-bottom: 9em;
+    margin-left: 1em;" />
+
+	<img src="img/news2.png" alt="segunda noticia" style=" width: 16px;
+    margin-left: -16.3em;
+    margin-bottom: -3em;"/>
+
+	<img src="img/news3.png" alt="terceira noticia" style="width: 16px;
+    margin-bottom: -15em;
+    margin-left: -16.3em;"/>
+
+	<img src="img/news4.png" alt="noticia principal"style="
+    width: 27em;
+    height: 21em;
+    margin-left: 15em;
+    margin-bottom: -7em;"/>
+
+</div>
+
+</body>
+</html>

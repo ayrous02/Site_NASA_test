@@ -1,0 +1,35 @@
+
+*SITE QUE USEI PARA OBTER UM API E CONFIGURAR O GOOGLE MAPS
+https://console.developers.google.com/apis/credentials?project=infra-odyssey-183016&hl=pt-br
+
+*BUGS:
+1) Se eu coloco o target="_blank" os links no menu de lado não funcionam no site.html e quando não coloco eles não abrem na mesma página, só quando se clica em "abrir em nova página"
+2) Os controles > e < de Saturno e Terra não estão funcionando no modalBoot.html
+3) Quando tiro o display: grid no site.css o site fica todo desconfigurado
+4) Quando clico nas caixinhas(fruta, vegetais..) se cria um espaço entre a section alimento e a div do mapa no site.html
+5) O código script ta aparecendo em cima de meu site.html, por isso tive que subir o top do main e do nav de cima
+6) Minha fonte 'surfingcapital' não aceita números nem acentos por ser americana
+7) Qnd se mexe no mapa aparecem em cima do body no site.html uns códigos script e eu não sei o porque.
+8) O banner ainda não está 100% pronto.
+ 
+
+*EFEITOS/TRANSIÇÕES
+1)No site.html:
+- Ao passar o mouse nos icones do menu lateral a div fica mais clara e aparece uma caixinha falando do que se trata aquele icone-link(ex: a camera redireciona para a galeria, então irá estar escrito galeria)
+-Ao passar o mouse no menu de cime fixo, as letras ficam mais claras e te redirecionam para cada sessão do site
+-Ao clicar na caixinha de pesquisa a borda dela fica com um sombreado básico
+-Ao clicar na caixinha de pesquisa o que estava escrito ao fundo some
+-Ao passar o mouse em pesquisar a caixinha adquire uma cor azul
+-Ao clicar na imagem do foguete ele vai para o lado esquerdo simulando seu voo
+-Ao passar o mouse sobre o logo da NASA ele "brilha"
+-Ao passar o mouse pela caixinha de texto do endereço a mesma diminui, fica transparente e suas bordas ficam redondas
+-Ao passar o mouse sobre a imagem inicial de Marte ele escurece
+
+2)Na galeria(modalBoot.html):
+-Ao passar o mouse pelos botões eles dão um zoom
+-Ao clicar em um dos botões se abre uma janela modal
+
+3)No cadastro.html:
+-Ao clicar nas caixinhas para escrever elas adiquirem um sombreado em suas bordas
+-Ao clicar sobre a caixa de Data de Nascimento se abre um calendário para a pessoa selecionar sua data
+-Ao clicar em Enviar vai para a página inicial do banner.html

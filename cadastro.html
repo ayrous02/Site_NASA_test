@@ -1,0 +1,158 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title>Cadastro</title>
+<link href="cadastro.css" rel="stylesheet"/>
+<script src="js/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <meta charset="utf-8"/>
+
+</head>
+<body>
+
+<header>
+<img src="img/pincelada.png" alt="caixinha de texto feita por mim" style="
+    margin-left: 38.3em;
+    margin-top: -0.9em;
+    z-index: 1;
+    width: 69.4em;
+    height: 19.7em;"/>
+
+<div id="entrada">
+<h1>Cadastre-se!</h1>
+</div>
+</header>
+
+<main>
+<div type="text" class="caixaCadastro" name="item_descr_1" maxlength="50" ></div>
+
+  <div type="text" class="caixaRedonda" name="item_descr_1" maxlength="50" style="
+    background: black;
+    opacity: .8;
+    border: 2px solid #1a1a1a;
+    width: 120.8em;
+    height: 39.2em;
+    margin-left: 7.3em;
+    margin-top: 4.5em;">
+
+
+    	<form>
+    		
+    		<label for="time" style="     color: wheat;
+    font-size: 1.7em;
+    margin-left: 27em;
+    margin-top: 3.5em;">Data de Nascimento</label>
+			<input type="datetime-local" id="time" placeholder="Data De Nascimento" style="
+    width: 10.6em;
+    background-color: cadetblue;
+    height: 3.4em;
+    font-size: 1.6em;
+    border-color: cadetblue;">
+
+		
+			<form class="form-inline">
+			  <label class="sr-only" for="inlineFormInputName2">Name
+			  </label>
+			    <div class="input-group-addon" style="
+
+    width: 2.5em;
+    font-size: 2.1em;
+    height: 2.6em;
+    margin-left: 0.6em;
+    margin-top: -2.7em;">
+			    <img src="img/perfil.png" alt="imagem de perfil" style="width: 30px;" style="
+    width: 1.5em;"/>
+			    </div>
+			  <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInputName2" placeholder=" Nome" style="
+        width: 23.6em;
+    margin-top: -3.5em;
+    margin-left: 3.9em;
+    height: 3.6em;
+    font-size: 1.6em;">
+
+
+			  <label class="sr-only" for="inlineFormInputGroupUsername2" style="height: 42px;">Username</label>
+			  <div class="input-group mb-2 mr-sm-2 mb-sm-0" style=" width: 416px; height: 37px; margin-top: 57px; margin-left: 19px;">
+			    <div class="input-group-addon" style="
+    width: 2.2em;
+    font-size: 2.1em;
+    height: 2.7em;
+    margin-top: 0.338em;">@</div>
+			    <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username" style="     height: 3.6em;
+    margin-top: 0.4em;
+    font-size: 1.6em;
+    margin-left: -0.1em; background-color: white;">
+			  </div>
+			  </form>
+
+
+					<select id="campoTexto" class="form-control form-control-lg" style="    width: 13.6em;
+    height: 3.5em;
+    margin-left: 29.3em;
+    border-bottom-width: 0px;
+    padding-bottom: 0px;
+    font-size: 1.6em;
+    margin-top: -2.5em;">
+  					<option>Escolha seu sexo</option>
+  					<option>Feminino</option>
+  					<option>Masculino</option>
+  					<option>Outro</option>
+				</select>
+
+
+			<form class="form-inline">
+			  <div class="form-group" style=" margin-left: 797px; width: 403px; margin-top: 56px;">
+			    <label for="inputPassword6" style=" color: wheat; font-size: 22px;"></label>
+			    <input type="password" id="inputPassword6" class="form-control mx-sm-3" aria-describedby="passwordHelpInline" placeholder="Password" style=" 
+    width: 23.4em;
+    height: 3.8em;
+    margin-left: 4px;
+    margin-top: -25.6em;
+    font-size: 1.6em;">
+			    <small id="passwordHelpInline" class="text-muted"></small>
+			  </div>
+			</form>
+		
+		<div id="campoTexto" class="form-group">
+    		<label for="exampleFormControlTextarea1"></label>
+    		<textarea  placeholder="Campo de Mensagem" class="form-control" id="exampleFormControlTextarea1" rows="3" style="    height: 4.5em;
+    width: 28.9em;
+    margin-left: 45.4em;
+    margin-top: -8.5em;
+    text-align: center;
+    font-size: 1.6em;"></textarea>
+  		</div>
+						
+			<div id="envio"class="form-check mb-2 mr-sm-2 mb-sm-0" style=" height: 56px; width: 486px;">
+			<label class="form-check-label" style=" 
+    color: wheat;
+    font-size: 1.7em;
+    margin-left: 4.7em;
+    margin-top: 2.8em;">
+			      <input class="form-check-input" type="checkbox"> Aceito os termos
+			    </label>
+			  </div>
+
+  <div id="envio">
+			  <a href="banner.html">
+			<button type="submit" class="btn btn-primary" style="
+    width: 8.5em;
+    height: 1.9em;
+    font-size: 3em;
+    margin-left: 15.8em;
+    margin-top: -1.3em;
+    background-color: #243C90;
+    border-color: aqua;">Enviar</button>
+    </a>
+    </div>
+
+		</form>
+
+  </div>
+</main>
+  </body>
+</head>

@@ -1,0 +1,434 @@
+<DOCTYPE html>
+<html>
+<head>
+
+  <link rel="shortcut icon" href="img/logo.png"/>
+	<title style=" margin-top: 0px;padding: 0;height: 0px;width: 0px;">Projetos Astronômicos</title>
+	<link href="site.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/estilo.css"/>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <meta charset="utf-8"/>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+
+<header>
+
+       <nav class="navbar navbar-light navbar-expand-md bg-purple-dark navbar-dark" style="margin-bottom: 0px; position: fixed;
+       z-index:100000000; top: 0em;">
+    
+            <!-- Marca -->
+            <a class="navbar-brand" href="#">
+                <img src="img/ceu.png" alt="imagem do universo ilustrado" style=" min-width:5.2em; max-width: 5.2em; width: 5.2em; top: 0.2em;"/>
+                </a>
+    
+            <!-- Menu expansivo -->
+            <div class="collapse navbar-collapse" id="menuzinhoNav">
+                <ul class="navbar-nav mr-auto ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habitacao" style=" max=width:1.5em; min-width: 1.5em; font-size: 1.5em;">MORADIA  > </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#transporte"style="font-size: 1.5em;">TRANSPORTE  ></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#alimento" style="font-size: 1.5em;">ALIMENTAÇÃO  ></a>
+                    </li>
+                    <li class="nav-item">
+                </ul>
+
+                <!-- Formulário para barra de pesquisa -->
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Pesquise!" aria-label="Search" style="  width: 17em; height: 3.2em; font-size: 1em;">
+                <button class="btn btn-outline-info my-2 my-sm-0" type="submit" style="  width: 7.1em; height: 5.1em;">
+                <a href="#fim">
+                <img src="img/pesquisa.png" alt="imagem de uma lupa" style=" top: 0px; left: 0.1em; width: 4.1em;"/>
+                </button>
+                </a>
+                </form>
+            </div>
+        </nav>
+
+<!-- menu lateral -->
+<div class="nav-side-menu">
+    <div class="brand" id="logoNasa">
+    <a href="#">
+<img src="img/logo.png" alt="logo da Nasa"/>
+</a>
+    </div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+  
+        <div class="menu-list">
+  
+            <ul id="menu-content" class="menu-content collapse out">
+            <li>
+                 <button type="button" class="btn" data-toggle="tooltip" data-placement="right" title="Home">
+                  <a href="banner.html">
+                  <i class="fa fa-dashboard fa-lg"></i> 
+                  <img src="img/home.png" alt="imagem que redirecina para a pagina inicial"/>
+                   </a>
+	             </button>
+	             </li>
+
+                <li  data-toggle="collapse" data-target="#modal-mensagem" class="collapsed">
+                  <button type="button" class="btn" data-toggle="tooltip" data-placement="right" title="Galeria de fotos">
+                  <a href="modalBoot.html">
+                  <i class="fa fa-dashboard fa-lg"></i> 
+                  <img src="img/camera.png" alt="imagem que redireciona para galeria de fotos"/>
+                  </a>
+                  </button>
+                </li>
+
+
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <button type="button" class="btn" data-toggle="tooltip" data-placement="right" title="Estação Espacial Internacional">
+                  <a  href="http://www.siteastronomia.com/transmissoes-ao-vivo">
+                  <img src="img/astronauta.png" alt="imagem que redireciona para site sobre eei"/>
+                  </a>
+                  </button>
+                </li>
+
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                <button type="button" class="btn" data-toggle="tooltip" data-placement="right" title="Increva-se" >
+                  <a href="cadastro.html"> 
+                  <img src="img/se-inscreva.png" alt="imagem que redireciona para o cadastro"/>
+                  </a>
+                  </button>
+                </li>
+            </ul>
+     </div>
+</div>
+
+</header>
+	<main style="
+    margin-top: -3em;">
+
+    <section id="apresentacao">
+    <div id="aqui">
+		<img src="img/marte2.png" alt="imagem de Marte"/>
+    </div>	
+
+   <div id="nome">	
+    <h1 style="margin-top: -2.2em;
+    height: 0em;
+    font-size: 4em;
+    width: 18em;
+    margin-left: 6.5em;
+    font-weight: 600;">PROJETO MARTE</h1>
+    </div>
+  
+    <div id="caixaTextoRisco">
+    <img src="img/risco2.png" alt="caixinha de texto personalizada"/>
+	  </div>
+
+    <div id="texto">
+  	<p style="
+    color: black;
+    z-index: 100;
+    font-size: 1em;
+    margin-left: 58em;
+    margin-top: -31em;
+    text-align: center;
+    height: 5em;
+    width: 23em;
+    font-weight: 600;
+    opacity: .9;" class="rodar">ESTAMOS<br><br>ACOSTUMADOS A OUVIR <br><br>FALAR SOBRE<br><br> COLONIZAR MARTE, MAS<br><br> COMO OCORRERA?</p>
+    </div>
+
+<div id="foguete" style="height: 103px; width: 0em;">
+    <a href="#" style="width: 0em; height: 0em;">
+    <img src="img/foguetinho.png" alt="imagem ilustrativa de um foguete" style="
+    width: 17em;
+    height: 11em;
+    top: -18em;
+    left: 58em;"/>
+    </a>
+</div>
+
+    <div id="videoFundo">
+        <video id="videoFundo" autoplay="autoplay" loop="loop" controls muted style="
+    z-index: 1;
+    margin-top: -366px;
+    margin-left: -188px;">
+        <source src="video/introProject.mp4">
+    </video>
+    </div>
+
+
+<a href="modalBoot.html">
+<!-- Button modalBoot -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="modalBoot.html" style="
+    margin-left: 22em;
+    width: 13em;
+    height: 4em;
+    font-size: 2em;
+    text-align: center;
+    margin-top: -9.1em;
+    background-color: darkred;
+    border-color: red;
+    color: black;">
+  GALERIA
+</button>
+</a>
+		</section>
+
+  <section id="habitacao"> 
+  <div type="text" class="caixatexto" name="item_descr_1" maxlength="50" style="
+    background: #44250f;
+    height: 2.6em;
+    background: #44250f;
+    border: 2px solid #1a1a1a;
+    height: 1.9em;
+    width: 40.4em;">&nbsp;MORADIA</div>
+
+  <div type="text" class="caixaRedonda" name="item_descr_1" maxlength="50" style="background:#44250f;border:2px solid #1a1a1a;">
+  <img src="img/casinha.png" style="left: 8px;" alt="imagem de uma casa"/>
+  </div>
+  
+  <div id="imagemFundo1">
+  <img src="img/colonia.png" alt="colonia marciana ilustrada"/>  
+</div>
+
+<div id="caixaRisco">
+<img src="img/risco.png" alt="caxinha de texto personalizada"/>
+<p>FICAREMOS EM CABINES COM QUANTIDADES ESTUDADAS DE GASES.</p>
+</div>
+</section>
+
+  <section id="transporte"> 
+  <div type="text" class="caixatexto" name="item_descr_1" maxlength="50" style="
+    background: #44250f;
+    border: 2px solid #1a1a1a;
+    height: 1.9em;
+    width: 40.4em;
+    position: relative;">&nbsp;TRANSPORTE</div>
+
+  <div type="text" class="caixaRedonda2" name="item_descr_1" maxlength="50" style="background:#44250f;border:2px solid #1a1a1a;">
+  <img src="img/foguetinho.png" style="
+    left: 1em;
+    top: 1em;" alt="imagem de uma casa"/>
+  </div>
+  
+  <div id="imagemFundo2">
+  <img src="img/marte.jpg" alt="marte"/>  
+</div>
+
+<div id="caixaNuvem">
+<img src="img/nuvem.png" alt="imagem de uma nuvem"/>
+<p style="height: 0px;">TEREMOS AS SONDAS E OS FOGUETES.</p>
+</div>
+
+<div id="imagemLado1">
+ <img src="img/sonda.png" alt="sonda curisity"/>
+<p style="
+    margin-left: 7em;
+    margin-top: -44.5em;
+    z-index: 16000004;
+    font-size: 1.5em;
+    width: 10em;
+    color: black;
+    text-align: center;
+    width: 25em;
+    height: 2.4em;">TRANSPORTE DE COMIDAS.</p>
+</div>
+
+<div id="imagemLado2">
+<img src="img/foguete.png" alt="imagem de um foguete aterrissando"/>
+<p style="
+    margin-top: -55.3em;
+    text-align: center;
+    z-index: 1004000;
+    margin-left: 52em;
+    font-size: 1.5em;
+    color: black;
+    width: 19em;
+    height: 3em;"> TRANSPORTE DE PESSOAS.</p>
+</div>
+
+</section> 
+
+  <section id="alimento"> 
+  <div type="text" class="caixatexto" name="item_descr_1" maxlength="50" style="    background: #44250f;
+    border: 2px solid #1a1a1a;
+    height: 1.8em;
+    width: 40.5em;
+    position: relative;
+    margin-top: -30.3em;">&nbsp;ALIMENTACAO</div>
+
+  <div type="text" class="caixaRedonda3" name="item_descr_1" maxlength="50" style="background:#44250f;border:2px solid #1a1a1a;">
+  <img src="img/comer.png" style="left: 8px; top: 4px;" alt="imagem de uma casa"/>
+  </div>
+  
+  <div id="imagemFundo3">
+  <img src="img/fundoComida.png" alt="imagem que mostra como as pessoas lidam com comida no espaço"/>  
+  </div>
+
+  <div id="comidas">
+  <div type="text" class="caixatexto2" name="item_descr_1" maxlength="50"> <img src="img/maca.png" alt="imagem de uma maça"/>
+  <p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1" style="
+    margin-top: 0.5em;
+    background-color: black;
+    border-color: darkblue;
+    font-size: 1.1em;" >FRUTAS</a>
+  </div>
+
+  <div type="text" class="caixatexto3" name="item_descr_1" maxlength="50"> <img src="img/cenoura.png" alt="imagem de uma cenoura"/>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample1" style="    margin-top: -1.2em;
+    background-color: black;
+    border-color: darkblue;
+    font-size: 1.1em;">VERDURAS</button>
+  </div>
+
+ <div type="text" class="caixatexto4" name="item_descr_1" maxlength="50"> <img src="img/castanha.png" alt="imagem de uma castanha"/>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2" style="    margin-top: -1.2em;
+    background-color: black;
+    border-color: darkblue;
+    font-size: 1.1em;">CASTANHAS</button>
+ </div>
+ 
+  <div type="text" class="caixatexto5" name="item_descr_1" maxlength="50"> <img src="img/barrinha.png" alt="imagem de uma barra de cereal"/>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample4" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2" style="    margin-top: -1.5em;
+    background-color: black;
+    border-color: darkblue;
+    font-size: 1.1em;">CEREAIS</button>
+</p>
+  </div>
+
+<div class="row">
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+      <div class="card card-body" style="
+    background-color: black;
+    border-color: darkblue;
+    color: white;
+    font-weight: bolder;
+    height: 5.8em;
+    font-size: 2em;">FONTE DE ENERGIA</div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample2">
+      <div class="card card-body" style="
+    background-color: black;
+    border-color: darkblue;
+    font-weight: bolder;
+    color: white; font-size: 2em; height: 5.8em;">CONTROLE DE PESO</div>
+    </div>
+  </div>
+</div>
+
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample3">
+      <div class="card card-body" style="
+    background-color: black;
+    border-color: darkblue;
+    font-weight: bolder;
+    color: white;
+    left: 10.5em;
+    height: 5.8em;
+    font-size: 2em;">SAUDE CARDIOVASCULAR</div>
+    </div>
+  </div>
+
+
+  <div class="col">
+    <div class="collapse multi-collapse" id="multiCollapseExample4">
+      <div class="card card-body" style="
+    background-color: black;
+    border-color: darkblue;
+    font-weight: 500;
+    color: white;
+    font-weight: bolder;
+    left: 10.5em;
+    height: 5.8em;
+    font-size: 2em;">FONTE DE VITAMINAS</div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+  </div>
+  </section>
+
+<!-- google maps -->
+<section id="localizacao">
+  <div id="map" style="
+    position: relative;
+    overflow: hidden;
+    width: 100em;
+    height: 40em;
+    left: 9em;
+    top: -1em;
+    margin-bottom: 3em;
+}"></div>
+
+    <script style="
+    color: transparent;
+    top:0px ;
+    height: 0px;
+    width: 0px;">
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4QWDMF1oWFoIdRNaeplch5Vn3AJTDw-I&callback=initMap" style="height: 0px; width: 0px; top: 0px;">
+    </script>
+
+  <div type="text" class="caixatextinho shrink" name="item_descr_1" maxlength="50"> 
+      <h3>ONDE ESTAMOS:</h3>
+      <p>AUSTRALIA - R. HAPPYSMILE, 321</p>
+    </div>
+</section>
+
+	</main>
+
+
+<!-- rodapé -->
+<footer id="rodape" style="
+    width: 89.5%;
+    height: 10em;">
+<div id="footer1">
+<img src="img/tres.png" alt="imagem de um planeta"/>
+</div>
+
+<div id="contato">
+<p>(11)3245-9087</p>
+</div>
+
+<div id="direitos">
+<p style="
+    margin-bottom: 0em;
+    height: 0.7em;
+    width: 33.8em;
+    margin-left: 41em;
+    margin-right: 0em;">TODOS OS DIREITOS RESERVADOS</p>
+</div>
+<div id="footer4" style="height: 0px;">
+<img src="img/saturno.png" alt="imagem de Saturno"/>
+</div>
+</footer>
+
+</body>
+</html>

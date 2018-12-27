@@ -1,0 +1,83 @@
+@font-face{
+	font-family: 'spaceage';
+	src: url('fonts/spaceage.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+@font-face{
+	font-family: 'surfingcapital';
+	src: url('fonts/surfingcapital.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+
+main, header{
+
+    display: table-caption;
+    margin-left: 15%;
+    margin-right: auto;
+    left: auto;
+    right: auto;
+}
+
+
+body{
+	background-image: url('img/fundinho2.jpg');
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0px;
+    color: white;
+    min-width: 134em;
+    max-width: 142em;}
+
+#entrada h1{
+
+    margin-left: 17em;
+    margin-top: -3.7em;
+    font-family: "spaceage";
+    font-size: 3.2em;
+    font-weight: 600;
+}
+
+
+.caixaCadastro{
+    background: rgba(30, 30, 30, 0.8);
+    border: 2px solid #1a1a1a;
+    height: 107px;
+    width: 152px;
+    position: relative;
+    top: -387px;
+    left: 110px;
+    z-index:10000;
+}
+form{
+	font-family: 'cursive';
+}
+
+select, input, button, option{
+	font-family: 'cursive';
+	
+}
+
+#campoTexto{
+	font-family:"cursive";
+}
+
+#envio{
+	font-family:"cursive";
+	
+}
